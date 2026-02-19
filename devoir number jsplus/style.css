@@ -1,0 +1,101 @@
+/* Configuration générale */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* --- NOUVEAU CONTENEUR DU HAUT --- */
+.restaurant-header {
+    width: 100%;
+    background-color: #2c3e50; /* Couleur sombre et élégante */
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    margin-bottom: 40px;
+}
+
+.restaurant-header h1 {
+    margin: 0;
+    font-size: 3rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.restaurant-header p {
+    margin-top: 10px;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+/* Conteneur des menus */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espace entre les menus */
+    max-width: 1400px;
+}
+
+/* Style commun aux trois menus (Respect des consignes) */
+.menu {
+    width: 500px;  /* Consigne 400px */
+    height: 600px; /* Consigne 550px */
+    margin: 15px;  /* Utilisation de Margin */
+    padding: 35px; /* Utilisation de Padding */
+    border: 8px double #2c3e50; /* Utilisation de Border */
+    background-color: white;
+    border-radius: 4px;
+    box-sizing: border-box; /* Important pour garder les dimensions exactes avec padding */
+}
+
+/* Gestion des backgrounds uniques (Consignes images blanches) */
+.breakfast  {
+    background-image:url(img/break.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.lunch {
+    background-image: url(img/Lunch.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.dinner {
+    background-image: url(img/diner.png);
+    background-repeat: repeat-x;
+    background-position: bottom;
+}
+
+/* Style intérieur des menus */
+h2 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+}
+
+.divider {
+    height: 2px;
+    background: #2c3e50;
+    width: 60px;
+    margin: 0 auto 30px auto;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 60px;
+}
+
+li {
+    font-size: 1.4rem;
+    margin-bottom: 25px;
+    color: #555;
+}
